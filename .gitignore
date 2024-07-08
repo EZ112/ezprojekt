@@ -1,0 +1,17 @@
+# dependencies
+node_modules/
+
+# vim session
+*.vim
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# yarn
+.yarn/*
+
+# TypeScript
+*.tsbuildinfo
