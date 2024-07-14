@@ -10,13 +10,17 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.8.1",
     "@builder.io/qwik": "^1.7.1",
     "@qwikdev/astro": "^0.6.1",
     "astro": "^4.11.5",
     "typescript": "^5.5.3"
   },
   "devDependencies": {
-    "prettier-plugin-astro": "^0.14.0"
+    "@astrojs/check": "^0.8.1",
+    "@astrojs/tailwind": "^5.1.0",
+    "prettier-plugin-astro": "^0.14.0",
+    "prettier-plugin-tailwindcss": "^0.6.5",
+    "tailwindcss": "^3.4.4",
+    "webpack": "^5.93.0"
   }
 }
