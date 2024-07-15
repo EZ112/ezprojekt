@@ -1,7 +1,7 @@
-@import url(/fonts/inter.css);
-@import url(/fonts/fira-sans.css);
-@import url(/fonts/ibm-plex-sans-condensed.css);
-@import url(/fonts/noto-sans-mono.css);
+@import url('../../public/fonts/inter.css');
+@import url('../../public/fonts/fira-sans.css');
+@import url('../../public/fonts/ibm-plex-sans-condensed.css');
+@import url('../../public/fonts/noto-sans-mono.css');
 
 @tailwind base;
 @tailwind components;

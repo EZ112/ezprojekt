@@ -2,11 +2,13 @@
   "extends": ["../../tsconfig.base.json", "astro/tsconfigs/strict"],
   "compilerOptions": {
     "jsx": "react-jsx",
-    "jsxImportSource": "@builder.io/qwik",
     "baseUrl": ".",
+    "outDir": "./dist",
     "paths": {
       "@/*": ["src/*"],
       "@/public/*": ["public/*"]
-    }
-  }
+    },
+    "jsxImportSource": "@builder.io/qwik"
+  },
+  "exclude": ["dist", "node_modules", "*.config.mjs", "tmp-*"]
 }

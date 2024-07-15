@@ -1,20 +1,23 @@
-import { component$ } from '@builder.io/qwik';
+/** @jsxImportSource react */
+import { qwikify$ } from '@builder.io/qwik-react';
 
 interface HeroProps {
   className?: string;
 }
 
-export const Hero = component$<HeroProps>(({ className }) => {
+export const Hero = qwikify$(({ className }: HeroProps) => {
   return (
-    <div class={`flex flex-col justify-center text-white ${className}`}>
-      <div class="font-display-1 text-9xl font-bold uppercase">
+    <div className={`flex flex-col justify-center text-white ${className}`}>
+      <div className="font-display-1 text-9xl font-bold uppercase">
         software engineer
       </div>
-      <div class="self-end font-display-1 text-9xl font-bold uppercase">
+      <div className="self-end font-display-1 text-9xl font-bold uppercase">
         who love bringing
       </div>
-      <div class="font-display-2 text-8xl uppercase">your ideas into</div>
-      <div class="font-display-2 text-8xl uppercase">real world solution</div>
+      <div className="font-display-2 text-8xl uppercase">your ideas into</div>
+      <div className="font-display-2 text-8xl uppercase">
+        real world solution
+      </div>
     </div>
   );
 });
