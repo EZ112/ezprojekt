@@ -1,5 +1,6 @@
 /** @jsxImportSource react */
 import { qwikify$ } from '@builder.io/qwik-react';
+import clsx from 'clsx';
 
 interface HeroProps {
   className?: string;
@@ -7,7 +8,7 @@ interface HeroProps {
 
 export const Hero = qwikify$(({ className }: HeroProps) => {
   return (
-    <div className={`flex flex-col justify-center text-white ${className}`}>
+    <div className={clsx('flex flex-col justify-center text-white', className)}>
       <div className="font-display-1 text-9xl font-bold uppercase">
         software engineer
       </div>

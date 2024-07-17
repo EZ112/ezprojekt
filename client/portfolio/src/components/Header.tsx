@@ -1,5 +1,6 @@
 /** @jsxImportSource react */
 import { qwikify$ } from '@builder.io/qwik-react';
+import clsx from 'clsx';
 
 import githubIcon from '@/public/icons/github.svg';
 import linkedinIcon from '@/public/icons/linkedin.svg';
@@ -11,7 +12,10 @@ interface HeaderProps {
 export const Header = qwikify$<HeaderProps>(({ className }) => {
   return (
     <div
-      className={`flex flex-row justify-between text-neutral-500 ${className}`}
+      className={clsx(
+        'flex flex-row justify-between text-neutral-500',
+        className,
+      )}
     >
       <a href="/" className="font-logo">
         ezprojekt.dev

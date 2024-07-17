@@ -2,14 +2,17 @@
 import { qwikify$ } from '@builder.io/qwik-react';
 import {
   SandpackCodeEditor,
+  SandpackFileExplorer,
   SandpackLayout,
   SandpackPreview,
   SandpackProvider,
 } from '@codesandbox/sandpack-react';
+import clsx from 'clsx';
 
-const CODE_SNIPPET = `export default function App(): JSX.Element {
-  return <h1 className="text-cyan-400">Hello world asdf</h1>
-}`;
+import githubIcon from '@/public/icons/github.svg?raw';
+import bonsaiImage from '@/public/images/bonsai.jpg?raw';
+
+import Sample from './sandbox/Sample?raw';
 
 interface CodeSandboxProps {
   className?: string;
@@ -18,23 +21,38 @@ interface CodeSandboxProps {
 export const CodeSandbox = qwikify$(
   ({ className }: CodeSandboxProps) => {
     return (
-      <div className={`text-white ${className}`}>
-        CodeSandbox
+      <div className={clsx('text-white', className)}>
+        <div className="flex flex-row items-center gap-2 font-logo">
+          <div className="size-5 bg-white" />I am Izzi BTW
+        </div>
         <SandpackProvider
+          className="!mb-16 !mt-3"
           template="react-ts"
           theme="dark"
-          files={{ '/App.tsx': CODE_SNIPPET }}
+          files={{
+            '/App.tsx': Sample,
+          }}
           options={{
+            experimental_enableServiceWorker: true,
             externalResources: ['https://cdn.tailwindcss.com'],
           }}
         >
-          <SandpackLayout>
-            <SandpackCodeEditor readOnly showLineNumbers />
-            <SandpackPreview />
+          <SandpackFileExplorer />
+          <SandpackLayout className="flex h-[36rem] flex-col">
+            <SandpackCodeEditor
+              className="!rounded-t-lg"
+              showLineNumbers
+              showReadOnly={false}
+            />
+            <SandpackPreview
+              className="!bg-red !rounded-b-lg"
+              showOpenInCodeSandbox={false}
+              showRefreshButton={false}
+            />
           </SandpackLayout>
         </SandpackProvider>
       </div>
     );
   },
-  { eagerness: 'visible' },
+  { eagerness: 'load' },
 );
