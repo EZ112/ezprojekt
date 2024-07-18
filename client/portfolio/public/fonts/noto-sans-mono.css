@@ -1,53 +1,53 @@
 @font-face {
   font-family: 'Noto Sans Mono';
   font-weight: 900;
-  src: url(/fonts/noto-sans-mono/black.ttf);
+  src: url(/fonts/noto-sans-mono/black.woff2) format('woff2');
 }
 
 @font-face {
   font-family: 'Noto Sans Mono';
   font-weight: 800;
-  src: url(/fonts/noto-sans-mono/extra-bold.ttf);
+  src: url(/fonts/noto-sans-mono/extra-bold.woff2) format('woff2');
 }
 
 @font-face {
   font-family: 'Noto Sans Mono';
   font-weight: 700;
-  src: url(/fonts/noto-sans-mono/bold.ttf);
+  src: url(/fonts/noto-sans-mono/bold.woff2) format('woff2');
 }
 
 @font-face {
   font-family: 'Noto Sans Mono';
   font-weight: 600;
-  src: url(/fonts/noto-sans-mono/semi-bold.ttf);
+  src: url(/fonts/noto-sans-mono/semi-bold.woff2) format('woff2');
 }
 
 @font-face {
   font-family: 'Noto Sans Mono';
   font-weight: 500;
-  src: url(/fonts/noto-sans-mono/medium.ttf);
+  src: url(/fonts/noto-sans-mono/medium.woff2) format('woff2');
 }
 
 @font-face {
   font-family: 'Noto Sans Mono';
   font-weight: 400;
-  src: url(/fonts/noto-sans-mono/regular.ttf);
+  src: url(/fonts/noto-sans-mono/regular.woff2) format('woff2');
 }
 
 @font-face {
   font-family: 'Noto Sans Mono';
   font-weight: 300;
-  src: url(/fonts/noto-sans-mono/light.ttf);
+  src: url(/fonts/noto-sans-mono/light.woff2) format('woff2');
 }
 
 @font-face {
   font-family: 'Noto Sans Mono';
   font-weight: 200;
-  src: url(/fonts/noto-sans-mono/extra-light.ttf);
+  src: url(/fonts/noto-sans-mono/extra-light.woff2) format('woff2');
 }
 
 @font-face {
   font-family: 'Noto Sans Mono';
   font-weight: 100;
-  src: url(/fonts/noto-sans-monos/thin.ttf);
+  src: url(/fonts/noto-sans-mono/thin.woff2) format('woff2');
 }
