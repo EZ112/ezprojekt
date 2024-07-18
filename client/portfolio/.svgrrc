@@ -1,7 +1,0 @@
-{
-  "svgo": true,
-  "svgoConfig": null,
-  "replaceAttrValues": {
-    "#123456": "{props.fill}"
-  }
-}
