@@ -1,6 +1,4 @@
 @import url('../../public/fonts/inter.css');
-@import url('../../public/fonts/fira-sans.css');
-@import url('../../public/fonts/ibm-plex-sans-condensed.css');
 @import url('../../public/fonts/noto-sans-mono.css');
 
 @tailwind base;

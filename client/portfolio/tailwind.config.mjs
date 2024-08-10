@@ -6,8 +6,6 @@ export default {
       fontFamily: {
         logo: ['Noto Sans Mono'],
         body: ['Inter'],
-        'display-1': ['Fira Sans'],
-        'display-2': ['IBM Plex Sans Condensed'],
       },
     },
   },

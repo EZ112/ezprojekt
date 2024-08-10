@@ -741,6 +741,7 @@ __metadata:
     "@types/react-dom": "npm:^18.3.0"
     astro: "npm:^4.11.5"
     clsx: "npm:^2.1.1"
+    framer-motion: "npm:^11.3.7"
     prettier-plugin-astro: "npm:^0.14.0"
     prettier-plugin-tailwindcss: "npm:^0.6.5"
     prism-themes: "npm:^1.9.0"
@@ -3213,6 +3214,26 @@ __metadata:
   version: 4.3.7
   resolution: "fraction.js@npm:4.3.7"
   checksum: 10c0/df291391beea9ab4c263487ffd9d17fed162dbb736982dee1379b2a8cc94e4e24e46ed508c6d278aded9080ba51872f1bc5f3a5fd8d7c74e5f105b508ac28711
+  languageName: node
+  linkType: hard
+
+"framer-motion@npm:^11.3.7":
+  version: 11.3.7
+  resolution: "framer-motion@npm:11.3.7"
+  dependencies:
+    tslib: "npm:^2.4.0"
+  peerDependencies:
+    "@emotion/is-prop-valid": "*"
+    react: ^18.0.0
+    react-dom: ^18.0.0
+  peerDependenciesMeta:
+    "@emotion/is-prop-valid":
+      optional: true
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: 10c0/8bf1cf0a3d17368560c1ac1f58c9c6f91564cf79c3902409aae190f2c26e8a029dd686796790ee6634db0030d7e54dc35ed5033ddd6fdb83f2b6705304e0dee8
   languageName: node
   linkType: hard
 

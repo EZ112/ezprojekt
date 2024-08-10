@@ -6,19 +6,27 @@ interface HeroProps {
   className?: string;
 }
 
-export const Hero = qwikify$(({ className }: HeroProps) => {
-  return (
-    <div className={clsx('flex flex-col justify-center text-white', className)}>
-      <div className="font-display-1 text-9xl font-bold uppercase">
-        software engineer
+export const Hero = qwikify$(
+  ({ className }: HeroProps) => {
+    return (
+      <div className={clsx('flex justify-between text-white', className)}>
+        <div className="flex flex-col gap-y-2 text-8xl">
+          <div>Turning idea into</div>
+          <div>real world solution</div>
+        </div>
+        <div className="flex w-1/4 flex-col justify-between">
+          <div>
+            When ideas face development challenge, my engineering expertise
+            turns them into custom software and web solutions, blending
+            creativity and technology to experiment freely and test demand,
+            ensuring your vision meets market needs
+          </div>
+          <a className="font-bold" href="#about">
+            Explore more
+          </a>
+        </div>
       </div>
-      <div className="self-end font-display-1 text-9xl font-bold uppercase">
-        who love bringing
-      </div>
-      <div className="font-display-2 text-8xl uppercase">your ideas into</div>
-      <div className="font-display-2 text-8xl uppercase">
-        real world solution
-      </div>
-    </div>
-  );
-});
+    );
+  },
+  { eagerness: 'visible' },
+);

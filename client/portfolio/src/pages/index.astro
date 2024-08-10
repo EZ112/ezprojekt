@@ -1,11 +1,14 @@
 ---
+import { AboutMe } from '@/components/AboutMe';
+import { Greeting } from '@/components/Greeting';
 import { Header } from '@/components/Header';
 import { Hero } from '@/components/Hero';
+import { Projects } from '@/components/Projects';
 import CodeSample from '@/island/CodeSample.astro';
 import '@/pages/base.css';
 ---
 
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -14,8 +17,11 @@ import '@/pages/base.css';
     <title>ezprojekt</title>
   </head>
   <body class="bg-stone-900 font-body font-normal">
-    <Header className="mx-24 mt-10" />
-    <Hero className="mx-24 mt-48" />
-    <CodeSample className="mx-64 mt-16" />
+    <Greeting />
+    <Header className="mx-24 pt-10" />
+    <Hero className="mx-24 pt-20" />
+    <CodeSample className="mx-24 pt-16" />
+    <AboutMe className="mx-24 pb-48 pt-96" />
+    <Projects className="pb-96 pt-48" />
   </body>
 </html>

@@ -7,7 +7,7 @@ import CodeSample from './CodeSample';
 
 export const CodePreview = qwikify$(() => {
   return (
-    <div className="flex items-center justify-center rounded-b-2xl bg-stone-700 py-8">
+    <div className="flex items-center justify-center rounded-b-2xl bg-stone-700/30 py-8">
       <CodeSample />
     </div>
   );
