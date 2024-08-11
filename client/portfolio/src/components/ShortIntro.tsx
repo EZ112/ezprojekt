@@ -3,6 +3,7 @@ import { qwikify$ } from '@builder.io/qwik-react';
 import { motion } from 'framer-motion';
 
 import arrowDown from '@/public/icons/arrow-down.svg';
+import { shortIntroVariants } from '@/utils/animationVariants';
 
 export const ShortIntro = qwikify$(
   () => {
@@ -13,10 +14,8 @@ export const ShortIntro = qwikify$(
             /
             <motion.div
               className="overflow-hidden text-nowrap"
-              animate={{
-                width: [0, '100%'],
-                transition: { duration: 1, delay: 1 },
-              }}
+              animate="name"
+              variants={shortIntroVariants}
             >
               izzi dzikri
             </motion.div>
@@ -24,13 +23,11 @@ export const ShortIntro = qwikify$(
           </div>
           <div className="overflow-hidden">
             <motion.div
-              animate={{
-                left: ['-100%', 0],
-                transition: { duration: 1, delay: 2 },
-              }}
               className="relative"
+              animate="skills"
+              variants={shortIntroVariants}
             >
-              <div className="flex items-center gap-x-2 text-neutral-500">
+              <div className="flex items-center gap-x-2 text-nowrap text-neutral-500">
                 <div>software engineer</div>
                 <div className="size-1 rounded-sm bg-white" />
                 <div>problem solver</div>
